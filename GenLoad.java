@@ -13,7 +13,7 @@ public class GenLoad extends RouteBuilder {
         final int NUM_TESTS = 10;
         long start = System.nanoTime();
         for (int i = 0; i < NUM_TESTS; i++) {
-            spin(100);
+            spin(200);
         }
         return "Took " + (System.nanoTime()-start)/1000000 + "ms (expected " + (NUM_TESTS*500) + ")";
     }
